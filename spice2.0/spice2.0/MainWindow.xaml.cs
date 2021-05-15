@@ -83,7 +83,7 @@ namespace ResistorDrawer
         public void drawCond(Canvas can, double xpos, double ypos, double width, string text)
         {
             can.Children.Clear();
-            double Rwidth = 30;
+            double Rwidth = 40;
             double Rheight = 20;
 
             double hacksn = (width - Rwidth) / 2;
@@ -115,8 +115,9 @@ namespace ResistorDrawer
             Rectangle R1 = new Rectangle();
             R1.Stroke = Brushes.Black;
             R1.StrokeThickness = 2;
-            R1.Width = (Rwidth / 2);
+            R1.Width = (30 / 2);
             R1.Height = Rheight;
+            R1.Fill = Brushes.Black;
             Canvas.SetLeft(R1, xpos + hacksn);
             Canvas.SetTop(R1, ypos - (Rheight / 2));
             can.Children.Add(R1);
@@ -124,9 +125,10 @@ namespace ResistorDrawer
             Rectangle R2 = new Rectangle();
             R2.Stroke = Brushes.Black;
             R2.StrokeThickness = 2;
-            R2.Width = (Rwidth / 4);
+            R2.Width = (30 / 2);
             R2.Height = Rheight;
-            Canvas.SetLeft(R2, xpos + hacksn + 15);
+            R2.Fill = Brushes.Black;
+            Canvas.SetLeft(R2, xpos + hacksn + 25);
             Canvas.SetTop(R2, ypos - (Rheight / 2));
             can.Children.Add(R2);
 
@@ -170,23 +172,15 @@ namespace ResistorDrawer
 
 
 
-            Rectangle R1 = new Rectangle();
-            R1.Stroke = Brushes.Black;
-            R1.StrokeThickness = 2;
-            R1.Width = (Rwidth / 4);
-            R1.Height = Rheight;
-            Canvas.SetLeft(R1, xpos + hacksn);
-            Canvas.SetTop(R1, ypos - (Rheight / 2));
-            can.Children.Add(R1);
-
-            Rectangle R2 = new Rectangle();
-            R2.Stroke = Brushes.Black;
-            R2.StrokeThickness = 2;
-            R2.Width = (Rwidth / 4);
-            R2.Height = Rheight;
-            Canvas.SetLeft(R2, xpos + hacksn);
-            Canvas.SetTop(R2, ypos - (Rheight / 2));
-            can.Children.Add(R2);
+            Rectangle R = new Rectangle();
+            R.Stroke = Brushes.Black;
+            R.StrokeThickness = 2;
+            R.Width = Rwidth;
+            R.Height = Rheight;
+            R.Fill = Brushes.Black;
+            Canvas.SetLeft(R, xpos + hacksn);
+            Canvas.SetTop(R, ypos - (Rheight / 2));
+            can.Children.Add(R);
 
 
             TextBlock tb = new TextBlock();
@@ -223,16 +217,25 @@ namespace ResistorDrawer
         private void coilbutton_Click(object sender, RoutedEventArgs e)
         {
             part = 1;
+
+            resistorbutton.IsChecked = false;
+            condensatorbutton.IsChecked = false;
         }
 
         private void condensatorbutton_Click(object sender, RoutedEventArgs e)
         {
             part = 2;
+
+            resistorbutton.IsChecked = false;
+            coilbutton.IsChecked = false;
         }
 
         private void resistorbutton_Click(object sender, RoutedEventArgs e)
         {
             part = 3;
+
+            condensatorbutton.IsChecked = false;
+            coilbutton.IsChecked = false;
         }
 
         private void widthslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)

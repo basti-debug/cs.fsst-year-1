@@ -8,12 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Canvas x:Name="controlcanvas" >
         <Label Content="Resistor Drawer" Height="46" Canvas.Left="34" Canvas.Top="22" Width="254" FontFamily="Yu Gothic UI Semibold" FontSize="30" FontWeight="Bold"/>
-        <Label Content="by basti-debug" Height="24" Canvas.Left="36" Canvas.Top="56" Width="98" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.422,0.278"/>
+        <Label Content="by basti-debug" Height="27" Canvas.Left="36" Canvas.Top="56" Width="98" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.422,0.278"/>
         <Label Content="use the slider to control the width, click on a spot to place the resitor " Height="24" Canvas.Left="36" Canvas.Top="73" Width="401" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.422,0.278"/>
         <Canvas x:Name="drawcan" Height="312" Canvas.Left="10" Canvas.Top="97" Width="565"  Focusable="True" Background="Aqua" MouseLeftButtonDown="linksuntenmausl"/>
         <Label Content="Choose a part: " Height="27" Canvas.Left="598" Canvas.Top="97" Width="138"/>
         <TextBox x:Name="enteredvalue" Height="20" Canvas.Left="598" TextWrapping="Wrap" Text="Value" Canvas.Top="211" Width="44" TextChanged="valueentered"/>
-        <RadioButton x:Name="resistorbutton" Content="resistor" Canvas.Left="598" Canvas.Top="124" Click="resistorbutton_Click" IsChecked="True" />
+        <RadioButton x:Name="resistorbutton" Content="resistor" Canvas.Left="598" Canvas.Top="124" Click="resistorbutton_Click" />
         <RadioButton x:Name="condensatorbutton" Content="condensator" Canvas.Left="598" Canvas.Top="144" Click="condensatorbutton_Click" />
         <RadioButton x:Name="coilbutton" Content="coil" Canvas.Left="598" Canvas.Top="164" Click="coilbutton_Click"/>
         <Slider x:Name="widthslider" Width="155" Canvas.Left="598" Canvas.Top="264" ValueChanged="widthslider_ValueChanged" Minimum="5" Maximum="15"/>
