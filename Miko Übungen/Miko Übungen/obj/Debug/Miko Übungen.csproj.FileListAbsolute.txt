@@ -1,0 +1,7 @@
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\bin\Debug\Miko Übungen.exe.config
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\bin\Debug\Miko Übungen.exe
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\bin\Debug\Miko Übungen.pdb
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\obj\Debug\Miko Übungen.csprojAssemblyReference.cache
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\obj\Debug\Miko Übungen.csproj.CoreCompileInputs.cache
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\obj\Debug\Miko Übungen.exe
+M:\ProfileRedir\Desktop\Miko Übungen\Miko Übungen\obj\Debug\Miko Übungen.pdb
