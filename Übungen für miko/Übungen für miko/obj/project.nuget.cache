@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0HgZl9bNl9NC5mv0oUhYDk06dIP0FRpjME2YO3ZNXLd5o+yu8Zzgl0tTXGYb6ypMFcri9wm975UecPulahrbCQ==",
+  "success": true,
+  "projectFilePath": "M:\\ProfileRedir\\Desktop\\Übungen für miko\\Übungen für miko\\Übungen für miko.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\190109\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
