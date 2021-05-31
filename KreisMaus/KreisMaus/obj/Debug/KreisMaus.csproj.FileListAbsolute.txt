@@ -1,0 +1,15 @@
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.csprojAssemblyReference.cache
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\MainWindow.g.cs
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\App.g.cs
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus_MarkupCompile.cache
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus_MarkupCompile.lref
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\bin\Debug\KreisMaus.exe.config
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\bin\Debug\KreisMaus.exe
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\bin\Debug\KreisMaus.pdb
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\MainWindow.baml
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.g.resources
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.Properties.Resources.resources
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.csproj.GenerateResource.cache
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.csproj.CoreCompileInputs.cache
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.exe
+M:\ProfileRedir\Desktop\cs.fsst\KreisMaus\KreisMaus\obj\Debug\KreisMaus.pdb

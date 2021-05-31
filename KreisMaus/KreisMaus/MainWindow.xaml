@@ -1,0 +1,15 @@
+﻿<Window x:Class="KreisMaus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KreisMaus"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas x:Name="maincan">
+        <Canvas x:Name="concan" Height="419" Width="214" Background="Aqua"/>
+        <Canvas x:Name="drawcan" Height="419" Width="578" Canvas.Left="214"  MouseLeftButtonDown="drawcan_MouseLeftButtonDown" MouseLeftButtonUp="drawcan_MouseLeftButtonUp" Background="White"/>
+
+
+    </Canvas>
+</Window>
