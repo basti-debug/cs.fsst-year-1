@@ -1,0 +1,15 @@
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\bin\Debug\Zeiger.exe.config
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\bin\Debug\Zeiger.exe
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\bin\Debug\Zeiger.pdb
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.csprojAssemblyReference.cache
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\MainWindow.g.cs
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\App.g.cs
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger_MarkupCompile.cache
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger_MarkupCompile.lref
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\MainWindow.baml
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.g.resources
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.Properties.Resources.resources
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.csproj.GenerateResource.cache
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.csproj.CoreCompileInputs.cache
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.exe
+M:\ProfileRedir\Desktop\cs.fsst\Zeiger\Zeiger\obj\Debug\Zeiger.pdb
