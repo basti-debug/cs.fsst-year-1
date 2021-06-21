@@ -7,8 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas x:Name="maincan">
-        <Canvas x:Name="concan" Height="419" Width="214" Background="Aqua"/>
-        <Canvas x:Name="drawcan" Height="419" Width="578" Canvas.Left="214"  MouseLeftButtonDown="drawcan_MouseLeftButtonDown" MouseLeftButtonUp="drawcan_MouseLeftButtonUp" Background="White"/>
+        <Canvas x:Name="concan" Height="419" Width="214" Background="Aqua">
+            <Label x:Name="radiuslabel" Content="0" Canvas.Left="65" Canvas.Top="276"/>
+            <Label x:Name="xlabel" Content="0" Canvas.Left="65" Canvas.Top="307"/>
+            <Label x:Name="ylabel" Content="0" Canvas.Left="65" Canvas.Top="338"/>
+            <Label Content="Radius" Canvas.Left="105" Canvas.Top="276"/>
+            <Label Content="xKooridnate" Canvas.Left="105" Canvas.Top="307"/>
+            <Label Content="yKooridnate" Canvas.Left="105" Canvas.Top="338"/>
+            <Button x:Name="colorbutton" Content="Farbe wählen" Width="124" Canvas.Left="55" Canvas.Top="187" Click="colorbutton_Click" Height="31"/>
+            <RadioButton x:Name="kreisradiobutton" Content="Kreis" Canvas.Left="55" Canvas.Top="223" IsChecked="True"/>
+            <RadioButton x:Name="umrandungradiobutton" Content="Umrandung" Canvas.Left="55" Canvas.Top="243"/>
+        </Canvas>
+        <Canvas x:Name="drawcan" Height="419" Width="578" Canvas.Left="214"  MouseLeftButtonDown="drawcan_MouseLeftButtonDown" MouseLeftButtonUp="drawcan_MouseLeftButtonUp" Background="White" MouseMove="drawcan_MouseMove"/>
 
 
     </Canvas>

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace KreisMaus
 {
@@ -23,24 +25,32 @@ namespace KreisMaus
 
         int xposm = 0;
         int yposm = 0;
-        int rad = 0;
+        int xr = 0;
+        int yr = 0;
+        int radys = 0;
+        bool drag = false;
+
+        int deltaX = 0;
+        int deltaY = 0;
 
         public MainWindow()
         {
             InitializeComponent();
             
+            
         }
 
 
-        public void drawcircle(Canvas can, int x, int y, int rad, Color col, int thicknes, Color linecol,bool marker,Color markercolory)
+        public void drawcircle(Canvas can, int x, int y, int rad, System.Windows.Media.Color col, int thicknes, System.Windows.Media.Color linecol,bool marker, System.Windows.Media.Color markercolory)
         {
+            drawcan.Children.Clear();
             //Marker setzten: x (fadenkreuz)
-            circle(can,x,y,Colors.Red,Colors.Orange, 50,3);
+            circle(can,x,y,col,linecol, rad,thicknes);
             markerdraw(can, x, y, markercolory);
 
         }
 
-        public void circle(Canvas can, int x1, int y1, Color col, Color linecol, int rad,int thickness)
+        public void circle(Canvas can, int x1, int y1, System.Windows.Media.Color col, System.Windows.Media.Color linecol, int rad,int thickness)
         {
             Ellipse circle = new Ellipse();
             Canvas.SetLeft(circle, x1 - rad);
@@ -55,7 +65,7 @@ namespace KreisMaus
              
         }
 
-        public void markerdraw(Canvas can, int x, int y, Color markercolor)
+        public void markerdraw(Canvas can, int x, int y, System.Windows.Media.Color markercolor)
         {
             //Marker setzten: x (fadenkreuz)
 
@@ -81,19 +91,82 @@ namespace KreisMaus
             can.Children.Add(line2);
         }
 
-        
+
 
         private void drawcan_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Point p = e.GetPosition(drawcan);
+           
+           System.Windows.Point p = e.GetPosition(drawcan);
             xposm = Convert.ToInt32(p.X);
             yposm = Convert.ToInt32(p.Y);
 
-            drawcircle(drawcan, xposm, yposm, 10, Colors.Red, 1, Colors.Orange, true, Colors.Crimson);
+            drawcircle(drawcan, xposm, yposm, radys, Colors.Gray, 1, Colors.Gray, true, Colors.Crimson);
+            drag = true;
+
         }
 
         private void drawcan_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            
+            System.Windows.Point p1 = new System.Windows.Point();
+            xr = (int)p1.X;
+            yr = (int)p1.Y;
+            deltaX = xposm - xr;
+            deltaY = yposm - yr;
+
+            int radiussses = (int)Math.Sqrt((deltaX * deltaX) + (deltaY * deltaY));
+
+            drawcircle(drawcan, deltaX, deltaY, radiussses, Colors.Red, 1, Colors.Orange, true, Colors.Black);
+            drag = false;
+
+        }
+
+        private async void drawcan_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            radiuslabel.Content = Convert.ToString(Math.Round((double)radys, 5));
+
+            xlabel.Content = Convert.ToString(Math.Round((double)xposm, 5));
+
+            ylabel.Content = Convert.ToString(Math.Round((double)yposm, 5));
+
+            if (!drag)
+                return;
+
+            await Task.Delay(1);
+
+            System.Windows.Point p1 = new System.Windows.Point();
+            xr = (int)p1.X;
+            yr = (int)p1.Y;
+            deltaX = xposm - xr;
+            deltaY = yposm - yr;
+
+            radys = (int)Math.Sqrt((deltaX * deltaX) + (deltaY * deltaY));
+
+            drawcircle(drawcan, xposm, yposm, radys, Colors.Black, 2, Colors.Orange, true, Colors.Black);
+
+
+            drag = false;
+
+        }
+
+       
+        private void colorbutton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (kreisradiobutton.IsChecked == true)
+            {
+                ColorDialog dialog = new ColorDialog();
+                dialog.ShowDialog();
+                System.Drawing.Color farbe = dialog.Color;
+                byte r = farbe.R;
+                byte g = farbe.G;
+                byte b = farbe.B;
+                System.Drawing.Color coloria = System.Drawing.Color.FromArgb(r, g, b);
+                drawcircle(drawcan, xposm, yposm, radys, System.Drawing.Brushes.AntiqueWhite, 2, System.Drawing.Brushes.Blue, true, System.Drawing.Brushes.Gray);
+                
+            }
+
+
 
         }
     }
